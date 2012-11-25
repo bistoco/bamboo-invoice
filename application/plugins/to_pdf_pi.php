@@ -7,7 +7,7 @@ ini_set("memory_limit","64M");
 
 function pdf_create($html, $filename, $stream=TRUE) 
 {
-	require_once(BASEPATH."plugins/dompdf/dompdf_config.inc.php"); 
+	require_once(__DIR__."/dompdf/dompdf_config.inc.php");
 //  require_once("dompdf/dompdf_config.inc.php");
 	
 	$dompdf = new DOMPDF();
